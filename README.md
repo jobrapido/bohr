@@ -55,7 +55,7 @@ casted to a boolean and --a=1 will be casted to number.
 Install from npm
 -------
 ```
-npm install git+ssh://git@bitbucket.org/jobrapido/frontend-server.git 
+npm install bohr
 ```
 
 Example Usage
