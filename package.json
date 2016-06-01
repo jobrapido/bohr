@@ -1,0 +1,13 @@
+{
+  "name": "bohr",
+  "private": false,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "description": "An environment config friendly static assets server",
+  "author": "Jobrapido delivery team <delivery@jobrapido.com>",
+  "main": "lib/Bohr.js",
+  "dependencies": {
+    "cheerio": "0.x",
+    "express": "4.x"
+  }
+}

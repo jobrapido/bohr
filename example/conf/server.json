@@ -1,0 +1,7 @@
+{
+  "server": {
+    "port": 9001,
+    "staticPath": "/static/",
+    "indexHtmlFile": "index.html"
+  }
+}
