@@ -61,7 +61,7 @@ npm install bohr
 Example Usage
 -------
 ```
-var server = require('../lib/Server');
+var server = require('bohr');
 
 /** @type {Object} */
 var serverConfiguration = new server.Config({})
