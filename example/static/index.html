@@ -2,14 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ffserver example</title>
+    <title>Bohr Server Example</title>
+    <script src="//cdn.jsdelivr.net/sockjs/1/sockjs.min.js"></script>
+    <script language="javascript" type="text/javascript">
+
+		var sock = new SockJS('http://localhost:9001/ws');
+		sock.onopen = function() {
+		    console.log('open');
+		};
+		sock.onmessage = function(e) {
+		    console.log('message', e.data);
+		};
+		sock.onclose = function() {
+		    console.log('close');
+		};
+
+
+	</script>
 </head>
 <body>
-<h1>Hello ff server</h1>
-<script>
-    (function () {
-
-    })();
-</script>
+  <h1>Hello Server</h1>
 </body>
 </html>

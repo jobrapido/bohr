@@ -2,6 +2,14 @@
   "server": {
     "port": 9001,
     "staticPath": "/static/",
-    "indexHtmlFile": "index.html"
+    "indexHtmlFile": "index.html",
+    "proxy": {
+  	  "ws": {
+  	    "base": "/ws",
+        "target": "http://localhost:8080",
+        "ws": true,
+        "changeOrigin": true
+  	  }
+  	}
   }
 }
