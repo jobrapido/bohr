@@ -16,10 +16,18 @@ Note that you **must** provide a basic server config for port, static asset path
     "port": 9001,
     "staticPath": "/static/",
     "indexHtmlFile": "index.html"
+  },
+  "proxy": {
+    "ws": {
+      "base": "/ws",
+      "target": "http://localhost:8080",
+      "ws": true,
+      "changeOrigin": true
+    }
   }
 }
 ```
-
+The server supports proxy configurations via http-proxy-middleware (v0.17.x, https://github.com/chimurai/http-proxy-middleware).
 
 Configuration builder
 -------
