@@ -57,6 +57,9 @@ object like this:
 }
 ```
 
+Note that environment variables are lower-cased so configuration variables that need to be configured via environment
+variables need to be all lower case.
+
 Where possible the configuration builder will cast the variables to javascript primitives, for example --a=true will be 
 casted to a boolean and --a=1 will be casted to number.
 
