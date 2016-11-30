@@ -9,7 +9,7 @@
   "dependencies": {
     "cheerio": "0.x",
     "express": "4.x",
-    "loadash": "4.17.2",
+    "lodash": "4.17.2",
     "http-proxy-middleware": "0.x"
   }
 }
