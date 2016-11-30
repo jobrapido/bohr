@@ -15,7 +15,10 @@ Note that you **must** provide a basic server config for port, static asset path
   "server": {
     "port": 9001,
     "staticPath": "/static/",
-    "indexHtmlFile": "index.html"
+    "indexHtmlFile": "index.html",
+    "cors" : {
+      "enabled": true
+    }
   },
   "proxy": {
     "ws": {
